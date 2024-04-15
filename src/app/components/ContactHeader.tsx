@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { burgerVariants, menuVariants } from "@/app/variants";
 import { useState } from "react";
+import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
-export default function Header() {
+export default function ContactHeader() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <header className="sticky top-0 z-50 flex max-h-24 items-center justify-between whitespace-nowrap bg-blackish px-6 py-6 shadow-md shadow-blackish">
@@ -20,24 +21,33 @@ export default function Header() {
           <li>
             <a href="/">Home</a>
           </li>
-          <li>
-            <a href="/#aboutus">About Us</a>
-          </li>
-          <li>
-            <a href="/#projects">Projects</a>
-          </li>
         </ul>
       </nav>
 
       <div className="flex items-center justify-center gap-x-4">
-        <a
-          href="/contact"
-          className="hidden h-fit w-fit items-center justify-center rounded-lg bg-white px-4 py-2 md:flex"
-        >
-          <h1 className="text-lg font-black uppercase text-black">
-            contact us
-          </h1>
-        </a>
+      <div className="flex gap-4 text-white">
+                <a
+                  className="cursor-pointer"
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=61552800787226"
+                >
+                  <FaFacebook className="h-8 w-8 transition-colors duration-200 hover:text-secondary" />
+                </a>
+                <a
+                  className="cursor-pointer"
+                  target="_blank"
+                  href="https://www.instagram.com/artistrylabbts/"
+                >
+                  <FaInstagram className="h-8 w-8 transition-colors duration-200 hover:text-secondary" />
+                </a>
+                <a
+                  className="cursor-pointer"
+                  target="_blank"
+                  href="https://twitter.com/ArtistryLab__"
+                >
+                  <FaXTwitter className="h-8 w-8 transition-colors duration-200 hover:text-secondary" />
+                </a>
+              </div>
         <div
           onClick={() => setIsOpen(!isOpen)}
           className="z-20 flex flex-col items-center justify-center gap-y-2 md:hidden"

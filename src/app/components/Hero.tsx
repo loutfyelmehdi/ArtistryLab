@@ -42,12 +42,12 @@ export default function Hero() {
         <h3 className="text-[22px] md:text-[30px] lg:text-[38px] xl:text-[53px]">
           of your brand&apos;s story.
         </h3>
-        <Link
-          href="/#contact"
+        <a
+          href="/contact"
           className="mt-10 h-12 w-72 rounded-lg bg-secondary px-6 py-2 text-2xl font-black text-primary lg:mt-20"
         >
           Start Your Project
-        </Link>
+        </a>
       </div>
       <figure className="bg-hero-pattern-nogradient mt-12 h-full w-full bg-cover md:mt-0 md:block md:w-2/5 md:bg-hero-pattern" />
     </section>

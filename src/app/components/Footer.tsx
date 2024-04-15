@@ -16,6 +16,7 @@ export default function Footer() {
   const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
   const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
   const formRef = useRef<HTMLFormElement>(null!);
+  const Year = new Date().getFullYear();
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
@@ -114,22 +115,22 @@ export default function Footer() {
           </div>
           <ul className="mt-5 flex flex-col items-center justify-center whitespace-nowrap text-sm text-white md:flex-row md:gap-4">
             <div className="md:gap-non flex items-center justify-center gap-4">
-              <Link
+              <a
                 href={"/termsconditions"}
                 className="transition-all duration-200 hover:font-bold"
               >
                 Terms & Conditions{" "}
-              </Link>
+              </a>
               <div className="text-xl font-bold">-</div>
-              <Link
+              <a
                 href={"/privacypolicy"}
                 className="transition-all duration-200 hover:font-bold"
               >
                 Privacy Policy
-              </Link>
+              </a>
             </div>
             <div className="hidden text-xl font-bold md:block">-</div>
-            <li>All Rights Reserved 2023 &copy;</li>
+            <li>All Rights Reserved {Year} &copy;</li>
           </ul>
         </div>
       </div>

@@ -25,13 +25,13 @@ export default function ProjectModal({
          -translate-y-1/2 overflow-hidden rounded-md
          bg-[#F3F3F3] text-[12px] font-semibold leading-tight text-black opacity-100 md:w-fit"
       >
-        <Link
+        <a
           href={projectClicked?.behance}
           target="_blank"
           className="absolute left-4 top-4 z-20 h-fit w-fit rounded-lg bg-white px-5 py-2.5 text-sm font-black shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
         >
           Go to Project
-        </Link>
+        </a>
         <div className="relative h-1/2 w-full bg-black">
           <div className="bg-project-pattern absolute left-0 top-0 z-10 h-full w-full opacity-50" />
           <Image

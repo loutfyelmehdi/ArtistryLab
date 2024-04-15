@@ -100,6 +100,30 @@ jurisdiction of the courts in Kingdom Of Morocco.`,
   },
 ];
 
+export const contactItems = [
+  {
+    title: "BRANDING & IDENTITY DESIGN",
+    para: `Crafting unique brand identities, including logo design, brand guidelines, and visual elements that represent a company's ethos.`,
+  },
+  {
+    title: "WEB DESIGN & DEVELOPMENT",
+    para: `Creating engaging, responsive, and user-friendly websites that align with a client's brand while focusing on functionality and aesthetics.`,
+  },
+  {
+    title: "SOCIAL MEDIA MANAGEMENT",
+    para: `Curating and managing social media content, scheduling posts, and engaging with the audience to boost online presence and brand visibility.`,
+  },
+  {
+    title: "Consultation and Brand Strategy",
+    para: `Offering expertise and guidance in brand strategy, market positioning, and design consultation to help clients achieve their goals`,
+  },
+  {
+    title: "Print Design",
+    para: `Developing print materials like brochures, flyers, business cards, and posters that maintain consistent brand aesthetics.`,
+  },
+
+];
+
 export const posters = [
   {
     path: "/poster1.jpeg",
