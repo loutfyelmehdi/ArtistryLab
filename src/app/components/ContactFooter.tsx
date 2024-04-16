@@ -65,9 +65,9 @@ export default function ContactFooter() {
                 className="flex flex-col gap-2 md:mt-6 px-10"
               >
                 <div className="w-full">
-                  <textarea
+                  <textarea 
                     placeholder="Your Text Here"
-                    className="w-full rounded-3xl bg-white p-4 text-lg font-black tracking-widest text-black text-opacity-40 h-40 md:h-72"
+                    className="w-full rounded-3xl bg-white p-4 text-lg font-black tracking-widest text-black text-opacity-40 h-40 md:h-72 resize-none"
                   />
                 </div>
                 <div className="grid md:grid-cols-5 gap-x-4 gap-0 gap-y-4 md:gap-y-0">
